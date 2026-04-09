@@ -1,11 +1,12 @@
 #include "../include.hpp"
 #include <cstdint>
 
+__attribute__((used))
 void
 stupidMandelvrot (
     PixMap& rPixMap,
     float fScale,
-    std::pair<float, float> ffScreenShift
+    const std::pair<float, float>& crffScreenShift
 )
 {
     const float cfMagnCoeff  = 1. / fScale;
@@ -17,7 +18,7 @@ stupidMandelvrot (
 
     std::pair<float, float> ffMathPix = {
         0,
-        -1 * (ffScreenShift.second + cfMagnCoeff)
+        -1 * (crffScreenShift.second + cfMagnCoeff)
     };
  
     for (
@@ -26,7 +27,7 @@ stupidMandelvrot (
         uhY++, ffMathPix.second += cffMathPixStep.second
     )
     {
-        ffMathPix.first = ffScreenShift.first - rPixMap.GetAspectRatio () * cfMagnCoeff;
+        ffMathPix.first = crffScreenShift.first - rPixMap.GetAspectRatio () * cfMagnCoeff;
 
         for (
             uint16_t uhX = 0;

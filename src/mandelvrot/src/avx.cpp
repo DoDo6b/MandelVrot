@@ -6,11 +6,12 @@
 static const __m256 sce_8fPackIdx  = _mm256_set_ps (7.0f, 6.0f, 5.0f, 4.0f, 3.0f, 2.0f, 1.0f, 0.0f);
 static const __m256 sce_8fPermRad2 = _mm256_set1_ps (c_fPermRad2);
 
+__attribute__((used))
 void
 avxMandelvrot (
     PixMap& rPixMap,
     float fScale,
-    std::pair<float, float> ffScreenShift
+    const std::pair<float, float>& crffScreenShift
 )
 {
     const float cfMagnCoeff  = 1. / fScale;
@@ -25,21 +26,17 @@ avxMandelvrot (
     };
     const __m256 c8fMathPixStepx8 = _mm256_set1_ps (8 * cffMathPixStep.first);
 
-    std::pair<float, float> ffMathPix = {
-        0,
-        -1 * (ffScreenShift.second + cfMagnCoeff)
-    };
+    float fMathPixY = -1 * (crffScreenShift.second + cfMagnCoeff);
     std::pair<__m256, __m256>_8f8fMathPix;
-                             _8f8fMathPix.second = _mm256_set1_ps (ffMathPix.second);
+                             _8f8fMathPix.second = _mm256_set1_ps (fMathPixY);
 
     for (
         uint16_t uhY = 0;
         uhY < rPixMap.GetScreen ().second;
-        uhY++, ffMathPix.second += cffMathPixStep.second
+        uhY++, fMathPixY += cffMathPixStep.second
     )
     {
-        ffMathPix.first = ffScreenShift.first - rPixMap.GetAspectRatio () * cfMagnCoeff;
-       _8f8fMathPix.first = _mm256_set1_ps (ffMathPix.first);
+       _8f8fMathPix.first = _mm256_set1_ps (crffScreenShift.first - rPixMap.GetAspectRatio () * cfMagnCoeff);
 
        _8f8fMathPix.first = _mm256_add_ps (_8f8fMathPix.first, c8f8fMathPixStep.first);
 

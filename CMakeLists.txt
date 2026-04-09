@@ -19,6 +19,7 @@ add_executable(Mandelvrot
     src/main.cpp 
     src/mandelvrot/src/stupid.cpp
     src/mandelvrot/src/avx.cpp
+    src/mandelvrot/src/adaptive.cpp
 )
 
 target_link_libraries(Mandelvrot PRIVATE raylib)
