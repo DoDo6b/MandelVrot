@@ -93,7 +93,7 @@ adaptiveMandelvrot (
             for (uint8_t bPackIdx = 0; bPackIdx < c_bParallelProcessing; bPackIdx++)
             {
                 uint8_t bIterClr = (uint8_t)(aiIterations[bPackIdx] / 255. * c_hDepth);
-                Color   stPixClr = aiIterations[bPackIdx] < c_hDepth ? Color {bIterClr, bIterClr, bIterClr, 255} : BLACK;
+                Color   stPixClr = aiIterations[bPackIdx] < c_hDepth ? Color {bIterClr, bIterClr, bIterClr, 255} : Color {0, 0, 0, 255};
 
                 int32_t           iPixIdx = (uhY * rPixMap.GetScreen ().first + uhX + bPackIdx);
                 rPixMap.GetMap ()[iPixIdx] = stPixClr;

@@ -2,9 +2,17 @@
 #include <utility>
 #include <memory>
 #include <iostream>
+#include <chrono>
 
-#include "raylib.h"
+
 #include "PixMap/PixMap.hpp"
+
+#ifndef NOGUI
+#include "raylib.h"
+#else
+#include "PixMap/mock.hpp"
+#endif
+
 #include "mandelvrot/include.hpp"
 
 
@@ -18,6 +26,10 @@ static const struct Position
     float m_fScale;
 } sc_astPresettedPositions[] = {
     {
+        .m_ffShifts = {.349375, .512087},
+        .m_fScale   = 16833.265625
+    },
+    {
         .m_ffShifts = {-.549938, .625749},
         .m_fScale   = 12395.225586
     },
@@ -28,10 +40,6 @@ static const struct Position
     {
         .m_ffShifts = {-1.243752, .116213},
         .m_fScale   = 21406.693359
-    },
-    {
-        .m_ffShifts = {.349375, .512087},
-        .m_fScale   = 16833.265625
     }
 };
 

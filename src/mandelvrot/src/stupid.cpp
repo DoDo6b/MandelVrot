@@ -56,7 +56,7 @@ stupidMandelvrot (
 
             
             uint8_t                                                   bIterClr = (uint8_t)(uhIterationsPassed / 255. * c_hDepth);
-            Color   stPixClr = uhIterationsPassed < c_hDepth ? Color {bIterClr, bIterClr, bIterClr, 255} : BLACK;
+            Color   stPixClr = uhIterationsPassed < c_hDepth ? Color {bIterClr, bIterClr, bIterClr, 255} : Color {0, 0, 0, 255};
 
             int32_t           iPixIdx = (uhY * rPixMap.GetScreen ().first + uhX);
             rPixMap.GetMap ()[iPixIdx] = stPixClr;
