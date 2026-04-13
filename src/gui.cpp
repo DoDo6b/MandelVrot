@@ -2,17 +2,9 @@
 #include <utility>
 #include <memory>
 #include <iostream>
-#include <chrono>
 
-
-#include "PixMap/PixMap.hpp"
-
-#ifndef NOGUI
 #include "raylib.h"
-#else
-#include "PixMap/mock.hpp"
-#endif
-
+#include "PixMap/PixMap.hpp"
 #include "mandelvrot/include.hpp"
 
 

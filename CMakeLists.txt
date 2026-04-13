@@ -4,7 +4,7 @@ project(Mandelvrot)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_compile_options(-O3 -mavx2 -DNOGUI)
+add_compile_options(-O3 -march=znver5 -DNOGUI)
 
 #set(RAYLIB_PATH "D:/DEVKIT/raylib/")
 #set(RAYLIB_LIBRARY "${RAYLIB_PATH}/libraylib.a")
