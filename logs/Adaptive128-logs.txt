@@ -1,0 +1,70 @@
+ADAPTIVE128
+
+
+[0/15]:
+execution time: 5333.26ms
+average frametime: 5.33326ms
+
+[1/15]:
+execution time: 5254.63ms
+average frametime: 5.25463ms
+
+[2/15]:
+execution time: 5259.01ms
+average frametime: 5.25901ms
+
+[3/15]:
+execution time: 5435.33ms
+average frametime: 5.43533ms
+
+[4/15]:
+execution time: 5417.7ms
+average frametime: 5.4177ms
+
+[5/15]:
+execution time: 5272.37ms
+average frametime: 5.27237ms
+
+[6/15]:
+execution time: 5266.08ms
+average frametime: 5.26608ms
+
+[7/15]:
+execution time: 5298.76ms
+average frametime: 5.29876ms
+
+[8/15]:
+execution time: 5325.9ms
+average frametime: 5.3259ms
+
+[9/15]:
+execution time: 5349.71ms
+average frametime: 5.34971ms
+
+[10/15]:
+execution time: 5355.5ms
+average frametime: 5.3555ms
+
+[11/15]:
+execution time: 5512.15ms
+average frametime: 5.51215ms
+
+[12/15]:
+execution time: 5271.03ms
+average frametime: 5.27103ms
+
+[13/15]:
+execution time: 5219.56ms
+average frametime: 5.21956ms
+
+[14/15]:
+execution time: 5299.68ms
+average frametime: 5.29968ms
+
+[15/15]:
+execution time: 5166.31ms
+average frametime: 5.16631ms
+
+total execution time: 85037ms
+average frametime: 5.31481ms, dispersion: 0.270227ms
+average FPS: 188.153

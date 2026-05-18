@@ -1,0 +1,68 @@
+
+[0/15]:
+execution time: 10269.9ms
+average frametime: 10.2699ms
+
+[1/15]:
+execution time: 10280.2ms
+average frametime: 10.2802ms
+
+[2/15]:
+execution time: 10253.8ms
+average frametime: 10.2538ms
+
+[3/15]:
+execution time: 10116.8ms
+average frametime: 10.1168ms
+
+[4/15]:
+execution time: 10012.9ms
+average frametime: 10.0129ms
+
+[5/15]:
+execution time: 9759.01ms
+average frametime: 9.75901ms
+
+[6/15]:
+execution time: 9574.67ms
+average frametime: 9.57467ms
+
+[7/15]:
+execution time: 9748.88ms
+average frametime: 9.74888ms
+
+[8/15]:
+execution time: 9706.5ms
+average frametime: 9.7065ms
+
+[9/15]:
+execution time: 9995.86ms
+average frametime: 9.99586ms
+
+[10/15]:
+execution time: 10191.1ms
+average frametime: 10.1911ms
+
+[11/15]:
+execution time: 9797.79ms
+average frametime: 9.79779ms
+
+[12/15]:
+execution time: 9933.66ms
+average frametime: 9.93366ms
+
+[13/15]:
+execution time: 10121.6ms
+average frametime: 10.1216ms
+
+[14/15]:
+execution time: 10048.9ms
+average frametime: 10.0489ms
+
+[15/15]:
+execution time: 9882.51ms
+average frametime: 9.88251ms
+
+total execution time: 159694ms
+average frametime: 9.98088ms, dispersion: 0.121917ms
+average FPS: 100.192

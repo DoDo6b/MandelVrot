@@ -2,7 +2,7 @@
 #include <cstdint>
 
 
-const uint8_t c_bParallelProcessing = 16;
+const uint8_t c_bParallelProcessing = 32;
 
 
 #define ALLIGN alignas (c_bParallelProcessing * 4)

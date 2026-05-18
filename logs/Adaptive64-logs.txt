@@ -1,0 +1,70 @@
+ADAPTIVE64
+
+
+[0/15]:
+execution time: 3734.77ms
+average frametime: 3.73477ms
+
+[1/15]:
+execution time: 3663.76ms
+average frametime: 3.66376ms
+
+[2/15]:
+execution time: 3739.19ms
+average frametime: 3.73919ms
+
+[3/15]:
+execution time: 3705.24ms
+average frametime: 3.70524ms
+
+[4/15]:
+execution time: 3795.07ms
+average frametime: 3.79507ms
+
+[5/15]:
+execution time: 3754.06ms
+average frametime: 3.75406ms
+
+[6/15]:
+execution time: 3702.21ms
+average frametime: 3.70221ms
+
+[7/15]:
+execution time: 3791.56ms
+average frametime: 3.79156ms
+
+[8/15]:
+execution time: 3724.39ms
+average frametime: 3.72439ms
+
+[9/15]:
+execution time: 3748.52ms
+average frametime: 3.74852ms
+
+[10/15]:
+execution time: 3739.32ms
+average frametime: 3.73932ms
+
+[11/15]:
+execution time: 3720.32ms
+average frametime: 3.72032ms
+
+[12/15]:
+execution time: 3713.24ms
+average frametime: 3.71324ms
+
+[13/15]:
+execution time: 3698.69ms
+average frametime: 3.69869ms
+
+[14/15]:
+execution time: 3732.93ms
+average frametime: 3.73293ms
+
+[15/15]:
+execution time: 3736.75ms
+average frametime: 3.73675ms
+
+total execution time: 59700ms
+average frametime: 3.73125ms, dispersion: 0.0623077ms
+average FPS: 268.007
